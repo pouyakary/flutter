@@ -583,7 +583,7 @@ class RenderFlex extends RenderBox with ContainerRenderObjectMixin<RenderBox, Fl
       }
 
       // Determine the spacePerFlex by allocating the remaining available space.
-      // When you're overconstrained spacePerFlex can be negative.
+      // When you're over-constrained spacePerFlex can be negative.
       final double spacePerFlex = math.max(0.0, (availableMainSpace - inflexibleSpace) / totalFlex);
 
       // Size remaining (flexible) items, find the maximum cross size.
